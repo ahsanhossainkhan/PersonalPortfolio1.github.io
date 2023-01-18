@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./icofont/icofont.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Personal portfolio</title>
+</head>
+<body onload="loader()">
+    <!-- preloader  -->
+    <div class="preloader">
+        <svg role="img" aria-label="Mouth and eyes come from 9:00 and rotate clockwise into position, right eye blinks, then all parts rotate and merge into 3:00" class="smiley" viewBox="0 0 128 128" width="128px" height="128px">
+            <defs>
+                <clipPath id="smiley-eyes">
+                    <circle class="smiley__eye1" cx="64" cy="64" r="8" transform="rotate(-40,64,64) translate(0,-56)" />
+                    <circle class="smiley__eye2" cx="64" cy="64" r="8" transform="rotate(40,64,64) translate(0,-56)" />
+                </clipPath>
+                <linearGradient id="smiley-grad" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#000" />
+                    <stop offset="100%" stop-color="#fff" />
+                </linearGradient>
+                <mask id="smiley-mask">
+                    <rect x="0" y="0" width="128" height="128" fill="url(#smiley-grad)" />
+                </mask>
+            </defs>
+            <g stroke-linecap="round" stroke-width="12" stroke-dasharray="175.93 351.86">
+                <g>
+                    <rect fill="hsl(193,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
+                    <g fill="none" stroke="hsl(193,90%,50%)">
+                        <circle class="smiley__mouth1" cx="64" cy="64" r="56" transform="rotate(180,64,64)" />
+                        <circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
+                    </g>
+                </g>
+                <g mask="url(#smiley-mask)">
+                    <rect fill="hsl(223,90%,50%)" width="128" height="64" clip-path="url(#smiley-eyes)" />
+                    <g fill="none" stroke="hsl(223,90%,50%)">
+                        <circle class="smiley__mouth1" cx="64" cy="64" r="56" transform="rotate(180,64,64)" />
+                        <circle class="smiley__mouth2" cx="64" cy="64" r="56" transform="rotate(0,64,64)" />
+                    </g>
+                </g>
+            </g>
+        </svg>
+    </div>
+    <!-- header part -->
+    <header></header>
+    <!-- main section  -->
+    <div class="main">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="section-image">
+                        <img src="./img/WhatsApp Image 2023-01-11 at 5.56.51 PM (1).jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="boxes">
+                        <button id="collapse_box">
+                            <img src="./img/close-button.png" alt="">
+                        </button>
+                        <div class="row justify-content-md-center">
+                            <div class="col-lg-6 mb-20">
+                                <div class="intro-box">
+                                    <h3>HI THERE ! I'M</h3>
+                                    <h1>AHSAN KHAN</h1>
+                                    <h2>
+                                        <span class="ityped"></span>
+                                    </h2>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-20">
+                                <div class="about_me-box box" value="hi">
+                                    <div class="section-text">
+                                        <h1 class="tagline">
+                                            <span>ABOUT</span>
+                                            <span>ME</span>
+                                        </h1>
+                                    </div>
+                                    <div class="box-container" id="about_me_box_container">
+                                        <div class="box-header">
+                                            <h1>
+                                                <span>ABOUT</span>
+                                                <span>ME</span>
+                                            </h1>
+                                        </div>
+                                        <div class="line_intro">
+                                            <span></span>
+                                            <span><i class="icofont-id-card"></i></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="personal_information">
+                                            <h1>PERSONAL INFO</h1>
+                                            <p>I'm freelancer web designer, CMS expert based on Bangladesh. I have serious passion for WordPress design and customization</p>
+                                            <div class="information-table">
+                                                <div class="row">
+                                                    <div class="col-lg-6">
+                                                        <span><b>First Name:</b> Ahsan</span>
+                                                        <span><b>Last Name:</b> Khan</span>
+                                                        <span><b>Date of birth:</b> 29 Nov 2003</span>
+                                                        <span><b>Nationality:</b> Bangladeshi</span>
+                                                        <span><b>Freelance:</b> Available</span>
+                                                    </div>
+                                                    <div class="col-lg-6">
+                                                        <span><b>Phone:</b> 01965068546</span>
+                                                        <span><b>Address:</b> Sylhet,Bangladesh</span>
+                                                        <span><b>Email:</b> ahsanhossainkha019@gmail.com</span>
+                                                        <span><b>Spoken Langages::</b> Bangla-English-Hindi</span>
+                                                        <span><b>Skype:</b> AhsanKhan</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="personal_information_buttons">
+                                                <button class="resume_download">DOWNLOAD RESUME</button>
+                                                <a href="mailto:ahsanhossainkhan019@gmail.com">CONTACT ME</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-20">
+                                <div class="experience-box box" value="hello">
+                                    <div class="section-text">
+                                        <h1 class="tagline">
+                                            <span>MY</span>
+                                            <span>EXPERIENCE</span>
+                                        </h1>
+                                    </div>
+                                    <div class="box-container" id="exp_box_container">
+                                        <div class="box-header">
+                                            <h1>
+                                                <span>MY</span>
+                                                <span>EXPERIENCE</span>
+                                            </h1>
+                                        </div>
+                                        <div class="line_intro">
+                                            <span></span>
+                                            <span><i class="icofont-expand-alt"></i></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="exp_box_info">
+                                            <div class="row">
+                                                <div class="col-lg-4">
+                                                    <button id="experience" class="active">EXPERIENCE</button>
+                                                    <button id="education" class="">EDUCATION</button>
+                                                    <button id="skills" class="">SKILLS</button>
+                                                </div>
+                                                <div class="col-lg-8">
+                                                    <div class="exp_boxes">
+                                                        <div id="experience_box" class="exp_box active">
+                                                            <div id="exp_box_header">
+                                                                <h1>EXPERIENCE</h1>
+                                                            </div>
+                                                            <div class="experience_box_info">
+                                                                <h3>CMS DEVELOPMENT - TIMES IT</h3>
+                                                                <span><i class="icofont-calendar"></i> 2022-2023</span>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, qui blanditiis repellendus impedit obcaecati facere?</p>
+                                                            </div>
+                                                            <span class="exp_break_line"></span>
+                                                            <div class="experience_box_info">
+                                                                <h3>WORDPRESS DEVELOPMENT - TIMES IT</h3>
+                                                                <span><i class="icofont-calendar"></i> 2022-2023</span>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, qui blanditiis repellendus impedit obcaecati facere?</p>
+                                                            </div>
+                                                            <span class="exp_break_line"></span>
+                                                            <div class="experience_box_info">
+                                                                <h3>WEB DESIGN - TIMES IT</h3>
+                                                                <span><i class="icofont-calendar"></i> 2022-2023</span>
+                                                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, qui blanditiis repellendus impedit obcaecati facere?</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="education_box" class="exp_box">
+                                                            <div id="exp_box_header">
+                                                                <h1>EDUCATION</h1>
+                                                            </div>
+                                                            <div class="experience_box_info">
+                                                                <h3>S.S.C</h3>
+                                                                <span><i class="icofont-calendar"></i> 2020-2022</span>
+                                                                <p>Hazi Abdus Sattar high school -Sylhet,Bangladesh</p>
+                                                            </div>
+                                                            <span class="exp_break_line"></span>
+                                                            <div class="experience_box_info">
+                                                                <h3>J.S.C</h3>
+                                                                <span><i class="icofont-calendar"></i> 2019-2020</span>
+                                                                <p>Hazi Abdus Sattar high school -Sylhet,Bangladesh</p>
+                                                            </div>
+                                                            <span class="exp_break_line"></span>
+                                                            <div class="experience_box_info">
+                                                                <h3>P.E.C.E</h3>
+                                                                <span><i class="icofont-calendar"></i> 2017-2018</span>
+                                                                <p>Abdul Gafur Primary school -Sylhet,Bangladesh</p>
+                                                            </div>
+                                                        </div>
+                                                        <div id="skills_box" class="exp_box">
+                                                            <div id="exp_box_header">
+                                                                <h1>SKILLS</h1>
+                                                            </div>
+                                                            <div class="row skills_informations">
+                                                                <div class="col-lg-6">
+                                                                    <div class="skills_box_infor">
+                                                                        <span>HTML</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>CSS</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>BOOTSTRAP 5</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>JAVASCRIPT</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>JQUERY</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>PHP</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-6">
+                                                                    <div class="skills_box_infor">
+                                                                        <span>WORDPRESS</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>JOOMLA</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>MAGENTO</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>DRUPAL</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>ADOBE PHOTOSHOP</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                    <div class="skills_box_infor">
+                                                                        <span>ADOBE ILLUSTRATOR</span>
+                                                                        <span>
+                                                                            <i class="icofont-star"></i>
+                                                                            <i class="icofont-star"></i>
+                                                                        </span>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 mb-20">
+                                <div class="contact-box box">
+                                    <div class="section-text">
+                                        <h1 class="tagline">
+                                            <span>GET</span>
+                                            <span>IN TOUCH</span>
+                                        </h1>
+                                    </div>
+                                    <div class="box-container" id="contact_box_container">
+                                        <div class="box-header">
+                                            <h1>
+                                                <span>CONTACT </span>
+                                                <span>ME</span>
+                                            </h1>
+                                        </div>
+                                        <div class="line_intro">
+                                            <span></span>
+                                            <span><i class="icofont-email"></i></span>
+                                            <span></span>
+                                        </div>
+                                        <div class="contact_box_information">
+                                            <div class="row">
+                                                <div class="col-lg-5">
+                                                    <div class="contact_box_details">
+                                                        <div class="contact_box_details_info">
+                                                            <h2>PHONE</h2>
+                                                            <span>
+                                                                <i class="icofont-phone"></i>
+                                                                01965068546
+                                                            </span>
+                                                        </div>
+                                                        <div class="contact_box_details_info">
+                                                            <h2>EMAIL</h2>
+                                                            <span>
+                                                                <i class="icofont-email"></i>
+                                                                ahsanhossainkhan019@gmail.com
+                                                            </span>
+                                                        </div>
+                                                        <div class="contact_box_details_info">
+                                                            <h2>SKYPE</h2>
+                                                            <span>
+                                                                <i class="icofont-skype"></i>
+                                                                AhsanKhan
+                                                            </span>
+                                                        </div>
+                                                        <div class="contact_box_details_info">
+                                                            <h2>ADDRESS</h2>
+                                                            <span>
+                                                                <i class="icofont-home"></i>
+                                                                Sylhet,Bangladesh
+                                                            </span>
+                                                        </div>
+                                                        <div class="contact_box_details_info">
+                                                            <h2>SOCIAL NETWORKS</h2>
+                                                            <span>
+                                                                <a href="https://www.facebook.com/profile.php?id=100089113544119" class="facebook"><i class="icofont-facebook"></i></a>
+                                                                <a href="https://twitter.com/Ahsankhan019" class="twitter"><i class="icofont-twitter"></i></a>
+                                                                <a href="https://www.linkedin.com/in/ahsan-khan-b3863a260/" class="linkdin"><i class="icofont-linkedin"></i></a>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-7">
+                                                    <div class="contact_box_contact">
+                                                        <h3>FEEL FREE TO DROP ME A LINE</h3>
+                                                        <p>If you have any suggestion, project or even you want to say Hello.. please fill out the form below and I will reply you shortly.</p>
+                                                        <form action="ahsanhossainkhan015@gmail.com" method="post">
+                                                            <div>
+                                                                <input type="text" name="name" id="name">
+                                                                <label for="name">Your Name</label>
+                                                            </div>
+                                                            <div>
+                                                                <input type="email" name="email" id="email">
+                                                                <label for="email">Your Email</label>
+                                                            </div>
+                                                            <div>
+                                                                <textarea name="messege" id="messege" cols="30" rows="4"></textarea>
+                                                                <label for="messege">Your Messege</label>
+                                                            </div>
+                                                            <div>
+                                                                <button>SEND MESSAGE</button>
+                                                            </div>
+                                                        </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <script src="js/gsap.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/ityped.min.js"></script>
+    <script>
+            window.ityped.init(document.querySelector('.ityped'),{
+                strings: ['WEB DESIGNER','CMS EXPERT','WP DEVELOPER'],
+                loop: true
+            })
+    </script>
+</body>
+</html>
